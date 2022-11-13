@@ -1,6 +1,5 @@
-test_dict = {"prod": ["harry", "lenny"], "bon": ["joro", "ivan"]}
-is_user = False
-user = "ivan"
+ab = 'Attitude'
 
-print(test_dict.values())
-
+#
+most_frequent = max(set(ab), key = ab.count)
+print('The most frequent letter is, ', most_frequent)
