@@ -38,7 +38,7 @@ for direction, position in directions.items():
         row += position[0]
         col += position[1]
 
-    if collected_eggs >= max_collected_eggs:
+    if collected_eggs > max_collected_eggs:
         max_collected_eggs = collected_eggs
         best_direction = direction
         best_path = path

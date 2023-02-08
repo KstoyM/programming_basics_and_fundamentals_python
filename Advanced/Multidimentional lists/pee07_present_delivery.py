@@ -67,7 +67,7 @@ while command != "Christmas morning":
 
     command = input()
 
-neighborhood[santa_pos[0]][santa_pos[1]] = '-'
+neighborhood[santa_pos[0]][santa_pos[1]] = 'S'
 
 if not presents and nice_kids_visited < total_nice_kids:
     print("Santa ran out of presents!")
@@ -77,4 +77,4 @@ if not presents and nice_kids_visited < total_nice_kids:
 if nice_kids_visited == total_nice_kids:
     print(f"Good job, Santa! {total_nice_kids} happy nice kid/s.")
 else:
-    print(f"No presents {total_nice_kids - nice_kids_visited} nice kid/s.")
+    print(f"No presents for {total_nice_kids - nice_kids_visited} nice kid/s.")
