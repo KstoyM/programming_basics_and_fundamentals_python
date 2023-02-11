@@ -13,8 +13,10 @@ def students_credits(*args):
     else:
         print(f"Diyan needs {credits_needed - total_credits:.1f} credits more for a diploma.")
 
-    for k, v in sorted(courses_dict.items()):
+    for k, v in sorted(courses_dict.items(), key=lambda a: -a[1]):
         print(f"{k} - {v:.1f}")
+
+    return quit()
 
 
 credits_needed = 240

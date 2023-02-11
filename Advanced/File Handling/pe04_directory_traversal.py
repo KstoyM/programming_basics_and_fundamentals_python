@@ -1,6 +1,6 @@
 import os
 
-directory = "dir_traversal"
+directory = input()
 files = {}
 
 for filename in os.listdir(directory):
